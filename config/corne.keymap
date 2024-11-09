@@ -29,13 +29,6 @@
     };
 
     behaviors {
-        dot_comma_td: dot_comma_td {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DOT_COMMA_TD";
-            #binding-cells = <0>;
-            bindings = <&kp DOT>, <&kp COMMA>;
-        };
-
         home_shift_td: home_shift_td {
             compatible = "zmk,behavior-tap-dance";
             label = "HOME_SHIFT_TD";
@@ -48,6 +41,13 @@
             label = "END_SHIFT_TD";
             #binding-cells = <0>;
             bindings = <&kp END>, <&kp LS(END)>;
+        };
+
+        grave_tilde_td: grave_tilde_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "GRAVE_TILDE_TD";
+            #binding-cells = <0>;
+            bindings = <&kp GRAVE>, <&kp TILDE>;
         };
     };
 
@@ -63,10 +63,10 @@
 
             label = "Colemak";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F      &kp P  &kp G        &kp J    &kp L  &kp U       &kp Y          &kp MINUS  &kp SLASH
-&kp BACKSPACE  &kp A  &kp R  &kp S      &kp T  &kp D        &kp H    &kp N  &kp E       &kp I          &kp O      &dot_comma_td
-&kp LSHFT      &kp Z  &kp X  &kp C      &kp V  &kp B        &kp K    &kp M  &kp SQT     &kp SEMICOLON  &kp LALT   &kp LEFT_GUI
-                             &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &sk LSHIFT
+&kp TAB        &kp Q  &kp W  &kp F      &kp P        &kp G        &kp J       &kp L      &kp U     &kp Y          &kp MINUS     &kp SLASH
+&kp BACKSPACE  &kp A  &kp R  &kp S      &kp T        &kp D        &kp H       &kp N      &kp E     &kp I          &kp O         &kp ENTER
+&kp LSHFT      &kp Z  &kp X  &kp C      &kp V        &kp B        &kp K       &kp M      &kp SQT   &kp SEMICOLON  &kp LEFT_GUI  &kp ESC
+                             &kp LCTRL  &lt 1 COMMA  &kp SPACE    &sk LSHIFT  &lt 2 DOT  &kp LALT
             >;
         };
 
@@ -79,10 +79,10 @@
 
             label = "Left";
             bindings = <
-&kp ESC  &trans  &trans    &trans    &trans    &trans    &trans  &trans     &trans    &trans     &kp UNDERSCORE  &kp BSLH
-&kp DEL  &kp LT  &kp LBKT  &kp LBRC  &kp LPAR  &trans    &trans  &kp RPAR   &kp RBRC  &kp RBKT   &kp GT          &kp EQUAL
-&trans   &trans  &trans    &trans    &trans    &trans    &trans  &kp GRAVE  &kp DQT   &kp COLON  &kp PIPE        &kp TILDE
-                           &trans    &trans    &trans    &trans  &mo 3      &trans
+&grave_tilde_td  &trans  &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans     &kp UNDERSCORE  &kp BSLH
+&kp DEL          &kp LT  &kp LBKT  &kp LBRC  &kp LPAR  &trans    &trans  &kp RPAR  &kp RBRC  &kp RBKT   &kp GT          &kp EQUAL
+&trans           &trans  &trans    &trans    &trans    &trans    &trans  &trans    &kp DQT   &kp COLON  &trans          &kp PIPE
+                                   &trans    &trans    &trans    &trans  &mo 3     &trans
             >;
         };
 
@@ -132,10 +132,10 @@
         qwerty_layer {
             label = "QWERTY";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E      &kp R  &kp T        &kp Y    &kp U  &kp I       &kp O          &kp P      &kp SLASH
-&kp BACKSPACE  &kp A  &kp S  &kp D      &kp F  &kp G        &kp H    &kp J  &kp K       &kp L          &kp MINUS  &dot_comma_td
-&kp LSHFT      &kp Z  &kp X  &kp C      &kp V  &kp B        &kp N    &kp M  &kp SQT     &kp SEMICOLON  &kp LALT   &kp LEFT_GUI
-                             &kp LCTRL  &mo 1  &kp SPACE    &kp RET  &mo 2  &sk LSHIFT
+&kp TAB        &kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y       &kp U      &kp I     &kp O          &kp P         &kp SLASH
+&kp BACKSPACE  &kp A  &kp S  &kp D      &kp F        &kp G        &kp H       &kp J      &kp K     &kp L          &kp MINUS     &kp ENTER
+&kp LSHFT      &kp Z  &kp X  &kp C      &kp V        &kp B        &kp N       &kp M      &kp SQT   &kp SEMICOLON  &kp LEFT_GUI  &kp ESC
+                             &kp LCTRL  &lt 1 COMMA  &kp SPACE    &sk LSHIFT  &lt 2 DOT  &kp LALT
             >;
         };
     };
