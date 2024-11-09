@@ -73,10 +73,10 @@
         qwerty_layer {
             label = "QWERTY";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y       &kp U      &kp I     &kp O          &kp P         &kp SLASH
-&kp BACKSPACE  &kp A  &kp S  &kp D      &kp F        &kp G        &kp H       &kp J      &kp K     &kp L          &kp MINUS     &kp ENTER
-&kp LSHFT      &kp Z  &kp X  &kp C      &kp V        &kp B        &kp N       &kp M      &kp SQT   &kp SEMICOLON  &kp LEFT_GUI  &kp ESC
-                             &kp LCTRL  &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT  &kp LALT
+&kp TAB        &kp Q  &kp W  &kp E      &kp R   &kp T        &kp Y       &kp U   &kp I     &kp O          &kp P         &kp SLASH
+&kp BACKSPACE  &kp A  &kp S  &kp D      &kp F   &kp G        &kp H       &kp J   &kp K     &kp L          &kp MINUS     &kp ENTER
+&kp LSHFT      &kp Z  &kp X  &kp C      &kp V   &kp B        &kp N       &kp M   &kp SQT   &kp SEMICOLON  &kp LEFT_GUI  &kp ESC
+                             &kp LCTRL  &trans  &kp SPACE    &sk LSHIFT  &trans  &kp LALT
             >;
         };
 
