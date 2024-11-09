@@ -19,12 +19,12 @@
 
         arrows_layer_combo {
             bindings = <&mo 4>;
-            key-positions = <16 15>;
+            key-positions = <16 15 14>;
         };
 
         functions_layer_combo {
             bindings = <&sl 5>;
-            key-positions = <14 15 16>;
+            key-positions = <14 15 16 13>;
         };
     };
 
@@ -109,10 +109,10 @@
 
         arrows_layer {
             bindings = <
-&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans          &kp UP         &trans     &trans  &trans
-&trans  &trans  &trans  &trans         &trans         &trans    &trans  &kp LEFT        &kp DOWN       &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans          &trans         &trans     &trans  &trans
-                        &kp LC(MINUS)  &kp LC(EQUAL)  &trans    &trans  &home_shift_td  &end_shift_td
+&trans  &trans  &trans  &trans     &trans          &trans    &trans  &kp LC(MINUS)   &kp UP         &kp LC(EQUAL)  &trans  &trans
+&trans  &trans  &trans  &trans     &trans          &trans    &trans  &kp LEFT        &kp DOWN       &kp RIGHT      &trans  &trans
+&trans  &trans  &trans  &trans     &trans          &trans    &trans  &trans          &trans         &trans         &trans  &trans
+                        &kp LCTRL  &kp LC(LSHIFT)  &trans    &trans  &home_shift_td  &end_shift_td
             >;
 
             label = "Arrows";
