@@ -17,9 +17,14 @@
     combos {
         compatible = "zmk,combos";
 
-        arrow_layer_combo {
-            bindings = <&mo 3>;
+        arrows_layer_combo {
+            bindings = <&mo 4>;
             key-positions = <16 15>;
+        };
+
+        functions_layer_combo {
+            bindings = <&sl 5>;
+            key-positions = <14 15 16>;
         };
     };
 
@@ -29,6 +34,20 @@
             label = "DOT_COMMA_TD";
             #binding-cells = <0>;
             bindings = <&kp DOT>, <&kp COMMA>;
+        };
+
+        home_shift_td: home_shift_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "HOME_SHIFT_TD";
+            #binding-cells = <0>;
+            bindings = <&kp HOME>, <&kp LS(HOME)>;
+        };
+
+        end_shift_td: end_shift_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "END_SHIFT_TD";
+            #binding-cells = <0>;
+            bindings = <&kp END>, <&kp LS(END)>;
         };
     };
 
@@ -81,22 +100,33 @@
         middle_layer {
             label = "Middle";
             bindings = <
-&bt BT_SEL 0  &bt BT_SEL 3  &trans  &trans        &kp PSCRN  &trans      &kp F12   &kp F7  &kp F8        &kp F9  &bootloader  &kp C_MEDIA_COMPUTER
-&bt BT_SEL 1  &bt BT_SEL 4  &trans  &trans        &trans     &trans      &kp F11   &kp F4  &kp F5        &kp F6  &trans       &trans
-&bt BT_SEL 2  &bt BT_CLR    &trans  &kp K_CALC    &trans     &trans      &kp F10   &kp F1  &kp F2        &kp F3  &trans       &trans
-                                    &kp C_VOL_DN  &trans     &kp C_PP    &kp C_PP  &trans  &kp C_VOL_UP
+&bt BT_SEL 0  &bt BT_SEL 3  &trans  &trans        &kp PSCRN  &trans      &trans    &kp AMPERSAND    &kp ASTERISK  &kp LPAR   &bootloader  &trans
+&bt BT_SEL 1  &bt BT_SEL 4  &trans  &trans        &trans     &trans      &trans    &kp DOLLAR       &kp PERCENT   &kp CARET  &trans       &trans
+&bt BT_SEL 2  &bt BT_CLR    &trans  &kp K_CALC    &trans     &trans      &trans    &kp EXCLAMATION  &kp AT        &kp HASH   &trans       &trans
+                                    &kp C_VOL_DN  &trans     &kp C_PP    &kp C_PP  &trans           &kp C_VOL_UP
             >;
         };
 
-        arrow_layer {
+        arrows_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LC(MINUS)  &kp UP    &kp LC(EQUAL)  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT       &kp DOWN  &kp RIGHT      &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans         &trans    &trans         &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans         &trans
+&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans          &kp UP         &trans     &trans  &trans
+&trans  &trans  &trans  &trans         &trans         &trans    &trans  &kp LEFT        &kp DOWN       &kp RIGHT  &trans  &trans
+&trans  &trans  &trans  &trans         &trans         &trans    &trans  &trans          &trans         &trans     &trans  &trans
+                        &kp LC(MINUS)  &kp LC(EQUAL)  &trans    &trans  &home_shift_td  &end_shift_td
             >;
 
-            label = "Arrow";
+            label = "Arrows";
+        };
+
+        functions_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F12  &kp F7  &kp F8  &kp F9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F11  &kp F4  &kp F5  &kp F6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp F10  &kp F1  &kp F2  &kp F3  &trans  &trans
+                        &trans  &trans  &trans    &trans   &trans  &trans
+            >;
+
+            label = "Functions";
         };
     };
 };
