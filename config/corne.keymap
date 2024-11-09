@@ -39,7 +39,7 @@
             bindings = <
 &kp ESC  &trans  &trans  &trans  &trans  &kp LPAR    &kp RPAR  &trans    &kp UP    &trans     &kp EQUAL  &kp BSLH
 &kp DEL  &trans  &trans  &trans  &trans  &kp LBRC    &kp RBRC  &kp LEFT  &kp DOWN  &kp RIGHT  &kp GRAVE  &kp COMMA
-&trans   &trans  &trans  &trans  &kp LT  &kp LBKT    &kp RBKT  &kp GT    &kp DQT   &kp COLON  &kp TILDE  &trans
+&trans   &trans  &trans  &trans  &kp LT  &kp LBKT    &kp RBKT  &kp GT    &kp DQT   &kp COLON  &kp TILDE  &kp PIPE
                          &trans  &trans  &trans      &trans    &mo 3     &trans
             >;
         };
