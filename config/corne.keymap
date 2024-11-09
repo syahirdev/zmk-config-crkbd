@@ -18,12 +18,12 @@
         compatible = "zmk,combos";
 
         arrows_layer_combo {
-            bindings = <&mo 4>;
+            bindings = <&mo 5>;
             key-positions = <16 15 14>;
         };
 
         functions_layer_combo {
-            bindings = <&sl 5>;
+            bindings = <&sl 6>;
             key-positions = <14 15 16 13>;
         };
     };
@@ -66,7 +66,17 @@
 &kp TAB        &kp Q  &kp W  &kp F      &kp P        &kp G        &kp J       &kp L      &kp U     &kp Y          &kp MINUS     &kp SLASH
 &kp BACKSPACE  &kp A  &kp R  &kp S      &kp T        &kp D        &kp H       &kp N      &kp E     &kp I          &kp O         &kp ENTER
 &kp LSHFT      &kp Z  &kp X  &kp C      &kp V        &kp B        &kp K       &kp M      &kp SQT   &kp SEMICOLON  &kp LEFT_GUI  &kp ESC
-                             &kp LCTRL  &lt 1 COMMA  &kp SPACE    &sk LSHIFT  &lt 2 DOT  &kp LALT
+                             &kp LCTRL  &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT  &kp LALT
+            >;
+        };
+
+        qwerty_layer {
+            label = "QWERTY";
+            bindings = <
+&kp TAB        &kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y       &kp U      &kp I     &kp O          &kp P         &kp SLASH
+&kp BACKSPACE  &kp A  &kp S  &kp D      &kp F        &kp G        &kp H       &kp J      &kp K     &kp L          &kp MINUS     &kp ENTER
+&kp LSHFT      &kp Z  &kp X  &kp C      &kp V        &kp B        &kp N       &kp M      &kp SQT   &kp SEMICOLON  &kp LEFT_GUI  &kp ESC
+                             &kp LCTRL  &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT  &kp LALT
             >;
         };
 
@@ -82,7 +92,7 @@
 &grave_tilde_td  &trans  &trans    &trans    &trans    &trans    &trans  &trans    &trans    &trans     &kp UNDERSCORE  &kp BSLH
 &kp DEL          &kp LT  &kp LBKT  &kp LBRC  &kp LPAR  &trans    &trans  &kp RPAR  &kp RBRC  &kp RBKT   &kp GT          &kp EQUAL
 &trans           &trans  &trans    &trans    &trans    &trans    &trans  &trans    &kp DQT   &kp COLON  &trans          &kp PIPE
-                                   &trans    &trans    &trans    &trans  &mo 3     &trans
+                                   &trans    &trans    &trans    &trans  &mo 4     &trans
             >;
         };
 
@@ -91,7 +101,7 @@
 &trans  &trans    &trans     &trans        &trans     &trans    &trans   &kp N7  &kp N8  &kp N9  &kp EXCLAMATION  &trans
 &trans  &kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH  &trans    &trans   &kp N4  &kp N5  &kp N6  &kp QUESTION     &trans
 &trans  &trans    &trans     &trans        &trans     &trans    &kp DOT  &kp N1  &kp N2  &kp N3  &kp AT           &trans
-                             &trans        &mo 3      &trans    &trans   &trans  &kp N0
+                             &trans        &mo 4      &trans    &trans   &trans  &kp N0
             >;
 
             label = "Right";
@@ -101,7 +111,7 @@
             label = "Middle";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 3  &trans  &trans        &kp PSCRN  &trans      &trans    &kp AMPERSAND    &kp ASTERISK  &kp LPAR   &bootloader  &tog 0
-&bt BT_SEL 1  &bt BT_SEL 4  &trans  &trans        &trans     &trans      &trans    &kp DOLLAR       &kp PERCENT   &kp CARET  &trans       &tog 6
+&bt BT_SEL 1  &bt BT_SEL 4  &trans  &trans        &trans     &trans      &trans    &kp DOLLAR       &kp PERCENT   &kp CARET  &trans       &tog 1
 &bt BT_SEL 2  &bt BT_CLR    &trans  &kp K_CALC    &trans     &trans      &trans    &kp EXCLAMATION  &kp AT        &kp HASH   &trans       &trans
                                     &kp C_VOL_DN  &trans     &kp C_PP    &kp C_PP  &trans           &kp C_VOL_UP
             >;
@@ -127,16 +137,6 @@
             >;
 
             label = "Functions";
-        };
-
-        qwerty_layer {
-            label = "QWERTY";
-            bindings = <
-&kp TAB        &kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y       &kp U      &kp I     &kp O          &kp P         &kp SLASH
-&kp BACKSPACE  &kp A  &kp S  &kp D      &kp F        &kp G        &kp H       &kp J      &kp K     &kp L          &kp MINUS     &kp ENTER
-&kp LSHFT      &kp Z  &kp X  &kp C      &kp V        &kp B        &kp N       &kp M      &kp SQT   &kp SEMICOLON  &kp LEFT_GUI  &kp ESC
-                             &kp LCTRL  &lt 1 COMMA  &kp SPACE    &sk LSHIFT  &lt 2 DOT  &kp LALT
-            >;
         };
     };
 };
