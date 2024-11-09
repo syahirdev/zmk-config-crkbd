@@ -8,11 +8,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&sk {
-    release-after-ms = <2000>;
-    quick-release;
-};
-
 / {
     keymap {
         compatible = "zmk,keymap";
@@ -42,10 +37,10 @@
 
             label = "Left";
             bindings = <
-&kp ESC  &trans  &trans  &trans  &trans  &kp LPAR    &kp RPAR  &trans    &kp UP    &trans     &kp EQUAL  &kp BSLH
-&kp DEL  &trans  &trans  &trans  &trans  &kp LBRC    &kp RBRC  &kp LEFT  &kp DOWN  &kp RIGHT  &kp GRAVE  &kp COMMA
-&trans   &trans  &trans  &trans  &kp LT  &kp LBKT    &kp RBKT  &kp GT    &kp DQT   &kp COLON  &kp TILDE  &kp PIPE
-                         &trans  &trans  &trans      &trans    &mo 3     &trans
+&kp ESC  &trans  &trans  &trans  &trans    &kp LT      &kp GT    &trans    &kp UP    &trans     &kp EQUAL  &kp BSLH
+&kp DEL  &trans  &trans  &trans  &trans    &kp LBRC    &kp RBRC  &kp LEFT  &kp DOWN  &kp RIGHT  &kp GRAVE  &kp COMMA
+&trans   &trans  &trans  &trans  &kp LPAR  &kp LBKT    &kp RBKT  &kp RPAR  &kp DQT   &kp COLON  &kp TILDE  &kp PIPE
+                         &trans  &trans    &trans      &trans    &mo 3     &trans
             >;
         };
 
