@@ -37,10 +37,10 @@
 
             label = "Left";
             bindings = <
-&kp ESC  &trans  &trans  &trans  &trans    &kp LT      &kp GT    &trans    &kp UP    &trans     &kp EQUAL  &kp BSLH
-&kp DEL  &trans  &trans  &trans  &trans    &kp LBRC    &kp RBRC  &kp LEFT  &kp DOWN  &kp RIGHT  &kp GRAVE  &kp COMMA
-&trans   &trans  &trans  &trans  &kp LPAR  &kp LBKT    &kp RBKT  &kp RPAR  &kp DQT   &kp COLON  &kp TILDE  &kp PIPE
-                         &trans  &trans    &trans      &trans    &mo 3     &trans
+&kp ESC     &bt BT_SEL 0  &trans  &trans  &trans    &kp LT      &kp GT    &trans    &kp UP    &trans     &kp EQUAL  &kp BSLH
+&kp DEL     &trans        &trans  &trans  &trans    &kp LBRC    &kp RBRC  &kp LEFT  &kp DOWN  &kp RIGHT  &kp GRAVE  &kp COMMA
+&bt BT_CLR  &trans        &trans  &trans  &kp LPAR  &kp LBKT    &kp RBKT  &kp RPAR  &kp DQT   &kp COLON  &kp TILDE  &kp PIPE
+                                  &trans  &trans    &trans      &trans    &mo 3     &trans
             >;
         };
 
