@@ -69,6 +69,8 @@
             label = "HOME_SHIFT_TD";
             #binding-cells = <0>;
             bindings = <&kp HOME>, <&kp LS(HOME)>;
+
+            tapping-term-ms = <300>;
         };
 
         end_shift_td: end_shift_td {
@@ -76,6 +78,8 @@
             label = "END_SHIFT_TD";
             #binding-cells = <0>;
             bindings = <&kp END>, <&kp LS(END)>;
+
+            tapping-term-ms = <300>;
         };
 
         grave_tilde_td: grave_tilde_td {
@@ -83,6 +87,8 @@
             label = "GRAVE_TILDE_TD";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>, <&kp TILDE>;
+
+            tapping-term-ms = <300>;
         };
 
         dashed_td: dashed_td {
@@ -90,6 +96,8 @@
             label = "DASHED_TD";
             #binding-cells = <0>;
             bindings = <&kp MINUS>, <&kp UNDERSCORE>;
+
+            tapping-term-ms = <300>;
         };
 
         slash_td: slash_td {
@@ -97,6 +105,8 @@
             label = "SLASH_TD";
             #binding-cells = <0>;
             bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+            tapping-term-ms = <300>;
         };
 
         quote_td: quote_td {
@@ -104,6 +114,8 @@
             label = "QUOTE_TD";
             #binding-cells = <0>;
             bindings = <&kp SQT>, <&kp DOUBLE_QUOTES>;
+
+            tapping-term-ms = <300>;
         };
 
         colon_td: colon_td {
@@ -111,13 +123,17 @@
             label = "COLON_TD";
             #binding-cells = <0>;
             bindings = <&kp SEMICOLON>, <&kp COLON>;
+
+            tapping-term-ms = <300>;
         };
 
         eq_pipe_td: eq_pipe_td {
             compatible = "zmk,behavior-tap-dance";
             label = "EQ_PIPE_TD";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp PIPE>, <&key_repeat>;
+            bindings = <&kp EQUAL>, <&kp PIPE>;
+
+            tapping-term-ms = <300>;
         };
     };
 
@@ -133,20 +149,20 @@
 
             label = "Colemak";
             bindings = <
-&kp TAB        &kp Q  &kp W       &kp F         &kp P        &kp G        &kp J       &kp L        &kp U         &kp Y       &dashed_td   &slash_td
-&kp BACKSPACE  &kp A  &mt LALT R  &mt LSHIFT S  &mt LCTRL T  &kp D        &kp H       &mt RCTRL N  &mt RSHIFT E  &mt RALT I  &kp O        &kp ENTER
-&kp ESC        &kp Z  &kp X       &kp C         &kp V        &kp B        &kp K       &kp M        &quote_td     &colon_td   &eq_pipe_td  &kp LEFT_GUI
-                                  &kp LCTRL     &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT    &kp LALT
+&kp TAB        &kp Q  &kp W  &kp F      &kp P        &kp G        &kp J       &kp L      &kp U      &kp Y      &dashed_td   &slash_td
+&kp BACKSPACE  &kp A  &kp R  &kp S      &kp T        &kp D        &kp H       &kp N      &kp E      &kp I      &kp O        &kp ENTER
+&kp ESC        &kp Z  &kp X  &kp C      &kp V        &kp B        &kp K       &kp M      &quote_td  &colon_td  &eq_pipe_td  &kp LEFT_GUI
+                             &kp LCTRL  &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT  &kp LALT
             >;
         };
 
         qwerty_layer {
             label = "QWERTY";
             bindings = <
-&kp TAB        &kp Q  &kp W       &kp E         &kp R        &kp T        &kp Y       &kp U        &kp I         &kp O       &kp P        &slash_td
-&kp BACKSPACE  &kp A  &mt LALT S  &mt LSHIFT D  &mt LCTRL F  &kp G        &kp H       &mt RCTRL J  &mt RSHIFT K  &mt RALT L  &dashed_td   &kp ENTER
-&kp ESC        &kp Z  &kp X       &kp C         &kp V        &kp B        &kp N       &kp M        &quote_td     &colon_td   &eq_pipe_td  &kp LEFT_GUI
-                                  &kp LCTRL     &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT    &kp LALT
+&kp TAB        &kp Q  &kp W  &kp E      &kp R        &kp T        &kp Y       &kp U      &kp I      &kp O      &kp P        &slash_td
+&kp BACKSPACE  &kp A  &kp S  &kp D      &kp F        &kp G        &kp H       &kp J      &kp K      &kp L      &dashed_td   &kp ENTER
+&kp ESC        &kp Z  &kp X  &kp C      &kp V        &kp B        &kp N       &kp M      &quote_td  &colon_td  &eq_pipe_td  &kp LEFT_GUI
+                             &kp LCTRL  &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT  &kp LALT
             >;
         };
 
