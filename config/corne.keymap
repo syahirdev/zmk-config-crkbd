@@ -34,12 +34,12 @@
 
         lbkt_combo {
             bindings = <&kp LBKT>;
-            key-positions = <37 28>;
+            key-positions = <37 14>;
         };
 
         lt_combo {
             bindings = <&kp LT>;
-            key-positions = <37 27>;
+            key-positions = <37 13>;
         };
 
         rpar_combo {
@@ -54,12 +54,12 @@
 
         rbkt_combo {
             bindings = <&kp RBKT>;
-            key-positions = <40 31>;
+            key-positions = <40 21>;
         };
 
         gt_combo {
             bindings = <&kp GT>;
-            key-positions = <40 32>;
+            key-positions = <40 22>;
         };
     };
 
