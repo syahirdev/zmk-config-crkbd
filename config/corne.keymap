@@ -22,34 +22,14 @@
             key-positions = <14 15 16 13>;
         };
 
-        lbrc_combo {
-            bindings = <&kp LBRC>;
-            key-positions = <37 16>;
+        esc_combo {
+            bindings = <&kp ESCAPE>;
+            key-positions = <0 37>;
         };
 
-        lbkt_combo {
-            bindings = <&kp LBKT>;
-            key-positions = <37 15>;
-        };
-
-        lt_combo {
-            bindings = <&kp LT>;
-            key-positions = <37 14>;
-        };
-
-        rbrc_combo {
-            bindings = <&kp RBRC>;
-            key-positions = <40 19>;
-        };
-
-        rbkt_combo {
-            bindings = <&kp RBKT>;
-            key-positions = <40 20>;
-        };
-
-        gt_combo {
-            bindings = <&kp GT>;
-            key-positions = <40 21>;
+        gui_combo {
+            bindings = <&kp LEFT_GUI>;
+            key-positions = <40 11>;
         };
     };
 
@@ -139,10 +119,10 @@
 
             label = "Colemak";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F           &kp P        &kp G        &kp J       &kp L      &kp U          &kp Y      &dashed_td   &slash_td
-&kp BACKSPACE  &kp A  &kp R  &kp S           &kp T        &kp D        &kp H       &kp N      &kp E          &kp I      &kp O        &kp ENTER
-&kp ESC        &kp Z  &kp X  &kp C           &kp V        &kp B        &kp K       &kp M      &quote_td      &colon_td  &eq_pipe_td  &kp LEFT_GUI
-                             &mt LCTRL LPAR  &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT  &mt LALT RPAR
+&kp TAB         &kp Q  &kp W  &kp F         &kp P        &kp G        &kp J       &kp L      &kp U        &kp Y      &dashed_td   &slash_td
+&kp BACKSPACE   &kp A  &kp R  &kp S         &kp T        &kp D        &kp H       &kp N      &kp E        &kp I      &kp O        &kp ENTER
+&mt LCTRL LPAR  &kp Z  &kp X  &kp C         &kp V        &kp B        &kp K       &kp M      &quote_td    &colon_td  &eq_pipe_td  &mt LALT RPAR
+                              &mt LCTRL LT  &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT  &mt LALT GT
             >;
         };
 
@@ -165,16 +145,16 @@
 
             label = "Left";
             bindings = <
-&grave_tilde_td  &trans  &trans            &kp LS(LA(UP))    &trans             &trans    &trans  &kp LC(MINUS)   &kp UP    &kp LC(EQUAL)  &trans  &trans
-&kp DEL          &trans  &kp LS(LA(LEFT))  &kp LS(LA(DOWN))  &kp LS(LA(RIGHT))  &trans    &trans  &kp LEFT        &kp DOWN  &kp RIGHT      &trans  &trans
-&trans           &trans  &trans            &trans            &trans             &trans    &trans  &home_shift_td  &trans    &end_shift_td  &trans  &trans
-                                           &trans            &trans             &trans    &trans  &mo 4           &trans
+&grave_tilde_td  &trans  &trans            &kp LS(LA(UP))    &trans             &trans      &trans    &kp LC(MINUS)   &kp UP    &kp LC(EQUAL)  &trans  &kp ESC
+&kp DEL          &trans  &kp LS(LA(LEFT))  &kp LS(LA(DOWN))  &kp LS(LA(RIGHT))  &kp LBRC    &kp RBRC  &kp LEFT        &kp DOWN  &kp RIGHT      &trans  &trans
+&trans           &trans  &trans            &trans            &trans             &kp LBKT    &kp RBKT  &home_shift_td  &trans    &end_shift_td  &trans  &trans
+                                           &trans            &trans             &trans      &trans    &mo 4           &trans
             >;
         };
 
         right_layer {
             bindings = <
-&trans  &trans    &trans     &trans        &trans     &trans    &trans   &kp N7  &kp N8  &kp N9  &kp EXCLAMATION  &trans
+&trans  &trans    &trans     &trans        &trans     &trans    &trans   &kp N7  &kp N8  &kp N9  &kp EXCLAMATION  &kp ESC
 &trans  &kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH  &trans    &trans   &kp N4  &kp N5  &kp N6  &kp QUESTION     &trans
 &trans  &trans    &trans     &trans        &trans     &trans    &kp DOT  &kp N1  &kp N2  &kp N3  &kp AT           &trans
                              &trans        &mo 4      &kp N0    &trans   &trans  &kp N0
