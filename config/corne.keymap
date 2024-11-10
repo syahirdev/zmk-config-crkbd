@@ -22,44 +22,34 @@
             key-positions = <14 15 16 13>;
         };
 
-        lpar_combo {
-            bindings = <&kp LPAR>;
-            key-positions = <16 37>;
-        };
-
         lbrc_combo {
             bindings = <&kp LBRC>;
-            key-positions = <15 37>;
+            key-positions = <37 16>;
         };
 
         lbkt_combo {
             bindings = <&kp LBKT>;
-            key-positions = <37 14>;
+            key-positions = <37 15>;
         };
 
         lt_combo {
             bindings = <&kp LT>;
-            key-positions = <37 13>;
-        };
-
-        rpar_combo {
-            bindings = <&kp RPAR>;
-            key-positions = <19 40>;
+            key-positions = <37 14>;
         };
 
         rbrc_combo {
             bindings = <&kp RBRC>;
-            key-positions = <20 40>;
+            key-positions = <40 19>;
         };
 
         rbkt_combo {
             bindings = <&kp RBKT>;
-            key-positions = <40 21>;
+            key-positions = <40 20>;
         };
 
         gt_combo {
             bindings = <&kp GT>;
-            key-positions = <40 22>;
+            key-positions = <40 21>;
         };
     };
 
@@ -149,10 +139,10 @@
 
             label = "Colemak";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F      &kp P        &kp G        &kp J       &kp L      &kp U      &kp Y      &dashed_td   &slash_td
-&kp BACKSPACE  &kp A  &kp R  &kp S      &kp T        &kp D        &kp H       &kp N      &kp E      &kp I      &kp O        &kp ENTER
-&kp ESC        &kp Z  &kp X  &kp C      &kp V        &kp B        &kp K       &kp M      &quote_td  &colon_td  &eq_pipe_td  &kp LEFT_GUI
-                             &kp LCTRL  &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT  &kp LALT
+&kp TAB        &kp Q  &kp W  &kp F           &kp P        &kp G        &kp J       &kp L      &kp U          &kp Y      &dashed_td   &slash_td
+&kp BACKSPACE  &kp A  &kp R  &kp S           &kp T        &kp D        &kp H       &kp N      &kp E          &kp I      &kp O        &kp ENTER
+&kp ESC        &kp Z  &kp X  &kp C           &kp V        &kp B        &kp K       &kp M      &quote_td      &colon_td  &eq_pipe_td  &kp LEFT_GUI
+                             &mt LCTRL LPAR  &lt 2 COMMA  &kp SPACE    &sk LSHIFT  &lt 3 DOT  &mt LALT RPAR
             >;
         };
 
