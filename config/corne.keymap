@@ -24,42 +24,42 @@
 
         lpar_combo {
             bindings = <&kp LPAR>;
-            key-positions = <16 19>;
+            key-positions = <16 40>;
         };
 
         lbrc_combo {
             bindings = <&kp LBRC>;
-            key-positions = <15 20>;
+            key-positions = <15 40>;
         };
 
         lbkt_combo {
             bindings = <&kp LBKT>;
-            key-positions = <14 21>;
+            key-positions = <14 40>;
         };
 
         lt_combo {
             bindings = <&kp LT>;
-            key-positions = <13 22>;
+            key-positions = <13 40>;
         };
 
         rpar_combo {
             bindings = <&kp RPAR>;
-            key-positions = <28 31>;
+            key-positions = <37 19>;
         };
 
         rbrc_combo {
             bindings = <&kp RBRC>;
-            key-positions = <27 32>;
+            key-positions = <37 20>;
         };
 
         rbkt_combo {
             bindings = <&kp RBKT>;
-            key-positions = <26 33>;
+            key-positions = <37 21>;
         };
 
         gt_combo {
             bindings = <&kp GT>;
-            key-positions = <25 34>;
+            key-positions = <37 22>;
         };
     };
 
