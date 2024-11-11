@@ -145,10 +145,10 @@
 
             label = "Left";
             bindings = <
-&grave_tilde_td  &trans  &trans            &kp PAGE_UP    &trans             &trans      &trans    &kp LC(MINUS)   &kp UP    &kp LC(EQUAL)  &trans  &kp ESC
-&kp DEL          &trans  &kp LS(LA(LEFT))  &kp PAGE_DOWN  &kp LS(LA(RIGHT))  &kp LBRC    &kp RBRC  &kp LEFT        &kp DOWN  &kp RIGHT      &trans  &trans
-&trans           &trans  &trans            &trans         &trans             &kp LBKT    &kp RBKT  &home_shift_td  &trans    &end_shift_td  &trans  &trans
-                                           &trans         &trans             &trans      &trans    &mo 4           &trans
+&grave_tilde_td  &trans  &trans            &kp PAGE_UP    &trans             &trans      &trans    &kp LC(MINUS)  &kp UP    &kp LC(EQUAL)  &trans  &kp ESC
+&kp DEL          &trans  &kp LS(LA(LEFT))  &kp PAGE_DOWN  &kp LS(LA(RIGHT))  &kp LBRC    &kp RBRC  &kp LEFT       &kp DOWN  &kp RIGHT      &trans  &trans
+&trans           &trans  &trans            &trans         &kp LPAR           &kp LBKT    &kp RBKT  &kp RPAR       &trans    &end_shift_td  &trans  &trans
+                                           &trans         &trans             &trans      &trans    &mo 4          &trans
             >;
         };
 
