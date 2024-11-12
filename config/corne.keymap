@@ -123,6 +123,16 @@
             tapping-term-ms = <300>;
             bindings = <&kp LT>, <&kp GT>;
         };
+
+        new_behavior: new_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "NEW_BEHAVIOR";
+            bindings = <&kp>, <&lt_gt_td>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <300>;
+            flavor = "balanced";
+        };
     };
 
     keymap {
