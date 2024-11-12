@@ -124,9 +124,9 @@
             bindings = <&kp LT>, <&kp GT>;
         };
 
-        new_behavior: new_behavior {
+        ltgt_ctrl_ht: ltgt_ctrl_ht {
             compatible = "zmk,behavior-hold-tap";
-            label = "NEW_BEHAVIOR";
+            label = "LTGT_CTRL_HT";
             bindings = <&kp>, <&lt_gt_td>;
 
             #binding-cells = <2>;
