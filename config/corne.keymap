@@ -154,7 +154,7 @@
             label = "Left";
             bindings = <
 &kp ESC  &kp LC(SLASH)  &home_shift_td  &trans             &end_shift_td  &kp LT      &kp GT    &home_shift_td  &kp UP             &end_shift_td  &trans  &grave_tilde_td
-&kp DEL  &kp LC(X)      &kp LC(C)       &kp LC(V)          &kp LC(S)      &kp LBRC    &kp RBRC  &kp LEFT        &kp DOWN           &kp RIGHT      &trans  &trans
+&kp DEL  &kp LC(S)      &kp LC(X)       &kp LC(C)          &kp LC(V)      &kp LBRC    &kp RBRC  &kp LEFT        &kp DOWN           &kp RIGHT      &trans  &trans
 &trans   &trans         &trans          &kp LS(LA(RIGHT))  &kp LPAR       &kp LBKT    &kp RBKT  &kp RPAR        &kp LS(LA(RIGHT))  &trans         &trans  &trans
                                         &trans             &trans         &trans      &trans    &mo 3           &trans
             >;
