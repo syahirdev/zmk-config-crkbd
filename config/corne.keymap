@@ -132,10 +132,10 @@
 
             label = "Colemak";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F      &kp P        &kp G        &kp J      &kp L      &kp U      &kp Y      &dashed_td   &slash_td
-&kp BACKSPACE  &kp A  &kp R  &kp S      &kp T        &kp D        &kp H      &kp N      &kp E      &kp I      &kp O        &kp ENTER
-&kp LSHIFT     &kp Z  &kp X  &kp C      &kp V        &kp B        &kp K      &kp M      &quote_td  &colon_td  &eq_pipe_td  &kp LALT
-                             &kp LCTRL  &lt 1 COMMA  &kp SPACE    &sk LSHFT  &lt 2 DOT  &kp LCTRL
+&kp TAB          &kp Q  &kp W  &kp F      &kp P        &kp G        &kp J      &kp L      &kp U      &kp Y      &dashed_td   &slash_td
+&kp BACKSPACE    &kp A  &kp R  &kp S      &kp T        &kp D        &kp H      &kp N      &kp E      &kp I      &kp O        &kp ENTER
+&mt LSHIFT LPAR  &kp Z  &kp X  &kp C      &kp V        &kp B        &kp K      &kp M      &quote_td  &colon_td  &eq_pipe_td  &mt LALT RPAR
+                               &kp LCTRL  &lt 1 COMMA  &kp SPACE    &sk LSHFT  &lt 2 DOT  &kp LCTRL
             >;
         };
 
@@ -148,10 +148,10 @@
 
             label = "Left";
             bindings = <
-&kp ESC        &kp LC(Z)  &kp LC(Y)  &home_shift_td     &end_shift_td  &kp LT              &kp GT             &home_shift_td  &kp UP             &end_shift_td  &trans  &grave_tilde_td
-&kp DEL        &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)      &kp LBRC            &kp RBRC           &kp LEFT        &kp DOWN           &kp RIGHT      &trans  &trans
-&kp LC(SLASH)  &trans     &trans     &kp LS(LA(RIGHT))  &kp LC(S)      &left_bracket_td    &right_bracket_td  &none           &kp LS(LA(RIGHT))  &trans         &trans  &trans
-                                     &trans             &trans         &trans              &trans             &mo 3           &trans
+&kp ESC        &kp LC(Z)  &kp LC(Y)  &home_shift_td     &end_shift_td  &kp LT      &kp GT    &home_shift_td  &kp UP             &end_shift_td  &trans  &grave_tilde_td
+&kp DEL        &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)      &kp LBRC    &kp RBRC  &kp LEFT        &kp DOWN           &kp RIGHT      &trans  &trans
+&kp LC(SLASH)  &trans     &trans     &kp LS(LA(RIGHT))  &kp LC(S)      &kp LBKT    &kp RBKT  &none           &kp LS(LA(RIGHT))  &trans         &trans  &trans
+                                     &trans             &trans         &trans      &trans    &mo 3           &trans
             >;
         };
 
