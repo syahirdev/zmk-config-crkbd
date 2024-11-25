@@ -22,11 +22,6 @@
             key-positions = <14 15 16 13>;
         };
 
-        esc_combo {
-            bindings = <&kp ESCAPE>;
-            key-positions = <4 3>;
-        };
-
         gui_combo {
             bindings = <&kp LEFT_GUI>;
             key-positions = <11 10>;
@@ -106,22 +101,22 @@
             tapping-term-ms = <300>;
         };
 
-        lt_gt_td: lt_gt_td {
+        left_bracket_td: left_bracket_td {
             compatible = "zmk,behavior-tap-dance";
-            label = "LT_GT_TD";
+            label = "LEFT_BRACKET_TD";
             #binding-cells = <0>;
+            bindings = <&kp LPAR>, <&kp LBKT>;
+
             tapping-term-ms = <300>;
-            bindings = <&kp LT>, <&kp GT>;
         };
 
-        ltgt_ctrl_ht: ltgt_ctrl_ht {
-            compatible = "zmk,behavior-hold-tap";
-            label = "LTGT_CTRL_HT";
-            bindings = <&kp>, <&lt_gt_td>;
+        right_bracket_td: right_bracket_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "RIGHT_BRACKET_TD";
+            #binding-cells = <0>;
+            bindings = <&kp RPAR>, <&kp RBKT>;
 
-            #binding-cells = <2>;
-            tapping-term-ms = <250>;
-            flavor = "hold-preferred";
+            tapping-term-ms = <300>;
         };
     };
 
@@ -153,10 +148,10 @@
 
             label = "Left";
             bindings = <
-&kp ESC        &kp LC(Z)  &kp LC(Y)  &home_shift_td     &end_shift_td  &kp LT      &kp GT    &home_shift_td  &kp UP             &end_shift_td  &trans  &grave_tilde_td
-&kp DEL        &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)      &kp LBRC    &kp RBRC  &kp LEFT        &kp DOWN           &kp RIGHT      &trans  &trans
-&kp LC(SLASH)  &trans     &trans     &kp LS(LA(RIGHT))  &kp LPAR       &kp LBKT    &kp RBKT  &kp RPAR        &kp LS(LA(RIGHT))  &trans         &trans  &trans
-                                     &trans             &trans         &trans      &trans    &mo 3           &trans
+&kp ESC        &kp LC(Z)  &kp LC(Y)  &home_shift_td     &end_shift_td  &kp LT              &kp GT             &home_shift_td  &kp UP             &end_shift_td  &trans  &grave_tilde_td
+&kp DEL        &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)      &kp LBRC            &kp RBRC           &kp LEFT        &kp DOWN           &kp RIGHT      &trans  &trans
+&kp LC(SLASH)  &trans     &trans     &kp LS(LA(RIGHT))  &kp LC(S)      &left_bracket_td    &right_bracket_td  &none           &kp LS(LA(RIGHT))  &trans         &trans  &trans
+                                     &trans             &trans         &trans              &trans             &mo 3           &trans
             >;
         };
 
