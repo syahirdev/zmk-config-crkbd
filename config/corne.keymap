@@ -28,7 +28,7 @@
         };
 
         sleep {
-            bindings = <&kp K_SLEEP>;
+            bindings = <&kp LG(L)>;
             key-positions = <0 11>;
         };
     };
