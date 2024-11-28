@@ -106,14 +106,14 @@
             tapping-term-ms = <300>;
         };
 
-        hold_tap: hold_tap {
+        hrm: hrm {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOLD_TAP";
+            label = "HRM";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            flavor = "balanced";
+            flavor = "tap-preferred";
         };
     };
 
@@ -129,10 +129,10 @@
 
             label = "Colemak";
             bindings = <
-&kp TAB        &kp Q  &kp W             &kp F              &kp P              &kp G        &kp J      &kp L              &kp U               &kp Y             &dashed_td   &slash_td
-&kp BACKSPACE  &kp A  &hold_tap LALT R  &hold_tap LSHFT S  &hold_tap LCTRL T  &kp D        &kp H      &hold_tap LCTRL N  &hold_tap LSHIFT E  &hold_tap LALT I  &kp O        &kp ENTER
-&kp LSHIFT     &kp Z  &kp X             &kp C              &kp V              &kp B        &kp K      &kp M              &quote_td           &colon_td         &eq_pipe_td  &kp LALT
-                                        &kp LCTRL          &lt 1 COMMA        &kp SPACE    &sk LSHFT  &lt 2 DOT          &kp LCTRL
+&kp TAB        &kp Q  &kp W        &kp F         &kp P         &kp G        &kp J      &kp L         &kp U          &kp Y        &dashed_td   &slash_td
+&kp BACKSPACE  &kp A  &hrm LALT R  &hrm LSHFT S  &hrm LCTRL T  &kp D        &kp H      &hrm LCTRL N  &hrm LSHIFT E  &hrm LALT I  &kp O        &kp ENTER
+&kp LSHIFT     &kp Z  &kp X        &kp C         &kp V         &kp B        &kp K      &kp M         &quote_td      &colon_td    &eq_pipe_td  &kp LALT
+                                   &kp LCTRL     &lt 1 COMMA   &kp SPACE    &sk LSHFT  &lt 2 DOT     &kp LCTRL
             >;
         };
 
