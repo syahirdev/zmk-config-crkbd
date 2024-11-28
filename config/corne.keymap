@@ -110,15 +110,14 @@
 
             tapping-term-ms = <300>;
         };
+    };
 
-        hrm: hrm {
-            compatible = "zmk,behavior-hold-tap";
-            label = "HRM";
-            bindings = <&kp>, <&kp>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
+    macros {
+        acc_macro: acc_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp C &kp C &kp E &kp N &kp T &kp U &kp R &kp E &kp N1 &kp N2 &kp N3 &kp EXCL &kp AT &kp POUND>;
+            label = "ACC_MACRO";
         };
     };
 
@@ -172,7 +171,7 @@
             label = "Middle";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 3  &trans  &kp PG_UP     &kp PSCRN  &trans      &trans    &kp AMPERSAND    &kp ASTERISK  &kp LPAR   &trans  &trans
-&bt BT_SEL 1  &bt BT_SEL 4  &trans  &kp PG_DN     &trans     &trans      &trans    &kp DOLLAR       &kp PERCENT   &kp CARET  &trans  &trans
+&bt BT_SEL 1  &bt BT_SEL 4  &trans  &kp PG_DN     &trans     &trans      &trans    &kp DOLLAR       &kp PERCENT   &kp CARET  &trans  &acc_macro
 &bt BT_SEL 2  &bt BT_CLR    &trans  &trans        &trans     &trans      &trans    &kp EXCLAMATION  &kp AT        &kp HASH   &trans  &trans
                                     &kp C_VOL_DN  &trans     &kp C_PP    &kp C_PP  &trans           &kp C_VOL_UP
             >;
