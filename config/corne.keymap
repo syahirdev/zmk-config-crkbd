@@ -17,14 +17,19 @@
     combos {
         compatible = "zmk,combos";
 
-        functions_layer_combo {
+        functions_layer {
             bindings = <&sl 4>;
             key-positions = <14 15 16 13>;
         };
 
-        gui_combo {
+        gui {
             bindings = <&kp LEFT_GUI>;
             key-positions = <11 10>;
+        };
+
+        sleep {
+            bindings = <&kp K_SLEEP>;
+            key-positions = <0 11>;
         };
     };
 
@@ -100,6 +105,16 @@
 
             tapping-term-ms = <300>;
         };
+
+        hold_tap: hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-unless-interrupted";
+        };
     };
 
     keymap {
@@ -114,10 +129,10 @@
 
             label = "Colemak";
             bindings = <
-&kp TAB        &kp Q  &kp W  &kp F      &kp P        &kp G        &kp J      &kp L      &kp U      &kp Y      &dashed_td   &slash_td
-&kp BACKSPACE  &kp A  &kp R  &kp S      &kp T        &kp D        &kp H      &kp N      &kp E      &kp I      &kp O        &kp ENTER
-&kp LSHIFT     &kp Z  &kp X  &kp C      &kp V        &kp B        &kp K      &kp M      &quote_td  &colon_td  &eq_pipe_td  &kp LALT
-                             &kp LCTRL  &lt 1 COMMA  &kp SPACE    &sk LSHFT  &lt 2 DOT  &kp LCTRL
+&kp TAB        &kp Q  &kp W             &kp F              &kp P              &kp G        &kp J      &kp L              &kp U               &kp Y             &dashed_td   &slash_td
+&kp BACKSPACE  &kp A  &hold_tap LALT R  &hold_tap LSHFT S  &hold_tap LCTRL T  &kp D        &kp H      &hold_tap LCTRL N  &hold_tap LSHIFT E  &hold_tap LALT I  &kp O        &kp ENTER
+&kp LSHIFT     &kp Z  &kp X             &kp C              &kp V              &kp B        &kp K      &kp M              &quote_td           &colon_td         &eq_pipe_td  &kp LALT
+                                        &kp LCTRL          &lt 1 COMMA        &kp SPACE    &sk LSHFT  &lt 2 DOT          &kp LCTRL
             >;
         };
 
