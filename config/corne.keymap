@@ -156,7 +156,7 @@
             bindings = <
 &kp ESC        &kp LC(Z)  &kp LC(Y)  &home_shift_td     &end_shift_td  &kp LT      &kp GT    &kp GRAVE  &kp UP             &kp TILDE  &kp UNDERSCORE  &kp BACKSLASH
 &kp DEL        &kp LC(A)  &kp LC(X)  &kp LC(C)          &kp LC(V)      &kp LBRC    &kp RBRC  &kp LEFT   &kp DOWN           &kp RIGHT  &trans          &trans
-&kp LC(SLASH)  &trans     &trans     &kp LS(LA(RIGHT))  &kp LPAR       &kp LBKT    &kp RBKT  &kp RPAR   &kp DOUBLE_QUOTES  &kp COLON  &kp PIPE        &trans
+&kp LC(SLASH)  &kp LC(S)  &trans     &kp LS(LA(RIGHT))  &kp LPAR       &kp LBKT    &kp RBKT  &kp RPAR   &kp DOUBLE_QUOTES  &kp COLON  &kp PIPE        &trans
                                      &trans             &trans         &trans      &trans    &mo 3      &trans
             >;
         };
