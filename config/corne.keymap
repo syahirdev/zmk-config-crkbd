@@ -24,22 +24,42 @@
 
         gui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <11 10>;
+            key-positions = <24 25>;
         };
 
         sleep {
             bindings = <&kp LG(L)>;
-            key-positions = <0 11>;
+            key-positions = <11 10>;
         };
 
         awake {
             bindings = <&kp LC(LA(DEL))>;
-            key-positions = <12 23>;
+            key-positions = <23 22>;
         };
 
-        login {
-            bindings = <&acc_macro>;
-            key-positions = <24 35>;
+        a_macro {
+            bindings = <&a_macro>;
+            key-positions = <35 34>;
+        };
+
+        u_u_macro {
+            bindings = <&u_u_macro>;
+            key-positions = <0 1>;
+        };
+
+        u_p_macro {
+            bindings = <&u_p_macro>;
+            key-positions = <12 13>;
+        };
+
+        v_u_macro {
+            bindings = <&v_u_macro>;
+            key-positions = <0 1 2>;
+        };
+
+        v_p_macro {
+            bindings = <&v_p_macro>;
+            key-positions = <13 14 12>;
         };
     };
 
@@ -118,11 +138,39 @@
     };
 
     macros {
-        acc_macro: acc_macro {
+        a_macro: acc_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(A) &kp C &kp C &kp E &kp N &kp T &kp U &kp R &kp E &kp N1 &kp N2 &kp N3 &kp EXCL &kp AT &kp POUND>;
             label = "ACC_MACRO";
+        };
+
+        u_u_macro: u_u_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp E &kp N &kp Q &kp N8 &kp H>;
+            label = "U_U_MACRO";
+        };
+
+        u_p_macro: u_p_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(T) &kp K &kp U &kp Z &kp Y &kp N7 &kp V &kp N0 &kp N &kp Q &kp N4 &kp AT>;
+            label = "U_P_MACRO";
+        };
+
+        v_u_macro: v_u_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp T &kp T &kp S &kp T &kp D &kp O &kp M &kp BSLH &kp U &kp N &kp C &kp X &kp R &kp M &kp N7 &kp N0>;
+            label = "V_U_MACRO";
+        };
+
+        v_p_macro: v_p_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(U) &kp O &kp B &kp A &kp P &kp P &kp AT &kp N2 &kp N0 &kp N2 &kp N5 &kp N0 &kp N2>;
+            label = "V_P_MACRO";
         };
     };
 
