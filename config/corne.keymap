@@ -165,7 +165,7 @@
         u_p_macro: u_p_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(T) &kp K &kp U &kp Z &kp Y &kp N7 &kp V &kp N0 &kp N &kp Q &kp N4 &kp AT>;
+            bindings = <&kp LS(J) &kp A &kp N &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "U_P_MACRO";
         };
 
@@ -186,7 +186,7 @@
         u_u_p_macro: u_u_p_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp V &kp E &kp N &kp Q &kp N8 &kp H &kp TAB &kp LS(T) &kp K &kp U &kp Z &kp Y &kp N7 &kp V &kp N0 &kp N &kp Q &kp N4 &kp AT>;
+            bindings = <&kp V &kp E &kp N &kp Q &kp N8 &kp H &kp TAB &kp LS(J) &kp A &kp N &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "U_U_P_MACRO";
         };
 
@@ -235,10 +235,10 @@
 
         right_layer {
             bindings = <
-&kp ESC  &trans    &trans     &trans        &trans     &trans    &trans   &kp N7  &kp N8  &kp N9  &kp EXCLAMATION  &grave_tilde_td
-&kp DEL  &kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH  &trans    &trans   &kp N4  &kp N5  &kp N6  &kp QUESTION     &trans
-&trans   &trans    &trans     &trans        &trans     &trans    &kp DOT  &kp N1  &kp N2  &kp N3  &kp AT           &trans
-                              &trans        &mo 3      &kp N0    &trans   &trans  &kp N0
+&kp ESC        &trans    &trans     &trans        &trans     &trans    &trans   &kp N7  &kp N8  &kp N9  &kp EXCLAMATION  &grave_tilde_td
+&kp BACKSPACE  &kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH  &trans    &trans   &kp N4  &kp N5  &kp N6  &kp QUESTION     &trans
+&trans         &trans    &trans     &trans        &trans     &trans    &kp DOT  &kp N1  &kp N2  &kp N3  &kp AT           &trans
+                                    &kp DOT       &mo 3      &kp N0    &trans   &trans  &kp N0
             >;
 
             label = "Right";
