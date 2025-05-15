@@ -36,41 +36,6 @@
             bindings = <&kp LC(LA(DEL))>;
             key-positions = <23 22>;
         };
-
-        a_macro {
-            bindings = <&a_macro>;
-            key-positions = <35 34>;
-        };
-
-        u_u_macro {
-            bindings = <&u_u_macro>;
-            key-positions = <0 1>;
-        };
-
-        u_p_macro {
-            bindings = <&u_p_macro>;
-            key-positions = <2 1 0>;
-        };
-
-        v_u_macro {
-            bindings = <&v_u_macro>;
-            key-positions = <12 13>;
-        };
-
-        v_p_macro {
-            bindings = <&v_p_macro>;
-            key-positions = <12 13 14>;
-        };
-
-        u_u_p_macro {
-            bindings = <&u_u_p_macro>;
-            key-positions = <3 2 0 1>;
-        };
-
-        v_u_p_macro {
-            bindings = <&v_u_p_macro>;
-            key-positions = <15 14 12 13>;
-        };
     };
 
     behaviors {
@@ -148,53 +113,60 @@
     };
 
     macros {
-        a_macro: acc_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(A) &kp C &kp C &kp E &kp N &kp T &kp U &kp R &kp E &kp N1 &kp N2 &kp N3 &kp EXCL &kp AT &kp POUND>;
-            label = "ACC_MACRO";
-        };
-
-        u_u_macro: u_u_macro {
+        macro_1_1: macro_1_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp V &kp E &kp N &kp Q &kp N8 &kp H>;
-            label = "U_U_MACRO";
+            label = "MACRO_1_1";
         };
 
-        u_p_macro: u_p_macro {
+        macro_1_2: macro_1_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp LS(J) &kp A &kp N &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
-            label = "U_P_MACRO";
+            label = "MACRO_1_2";
         };
 
-        v_u_macro: v_u_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp T &kp T &kp S &kp T &kp D &kp O &kp M &kp BSLH &kp U &kp N &kp C &kp X &kp R &kp M &kp N7 &kp N0>;
-            label = "V_U_MACRO";
-        };
-
-        v_p_macro: v_p_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp LS(U) &kp O &kp B &kp A &kp P &kp P &kp AT &kp N2 &kp N0 &kp N2 &kp N5 &kp N0 &kp N2>;
-            label = "V_P_MACRO";
-        };
-
-        u_u_p_macro: u_u_p_macro {
+        macro_1_3: macro_1_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp V &kp E &kp N &kp Q &kp N8 &kp H &kp TAB &kp LS(J) &kp A &kp N &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
-            label = "U_U_P_MACRO";
+            label = "MACRO_1_3";
         };
 
-        v_u_p_macro: v_u_p_macro {
+        macro_2_1: macro_2_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp T &kp T &kp S &kp T &kp D &kp O &kp M &kp BACKSLASH &kp U &kp N &kp C &kp X &kp R &kp M &kp N7 &kp N0 &kp TAB &kp LS(U) &kp O &kp B &kp A &kp P &kp P &kp AT &kp N2 &kp N0 &kp N2 &kp N5 &kp N0 &kp N2>;
-            label = "V_U_P_MACRO";
+            bindings = <&kp N &kp T &kp T &kp S &kp T &kp D &kp O &kp M &kp BSLH &kp U &kp N &kp C &kp X &kp R &kp M &kp N7 &kp N0>;
+            label = "MACRO_2_1";
+        };
+
+        macro_2_2: macro_2_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(U) &kp O &kp B &kp A &kp P &kp P &kp AT &kp N2 &kp N0 &kp N2 &kp N5 &kp N0 &kp N2>;
+            label = "MACRO_2_2";
+        };
+
+        macro_2_3: macro_2_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N &kp T &kp T &kp S &kp T &kp D &kp O &kp M &kp BSLH &kp U &kp N &kp C &kp X &kp R &kp M &kp N7 &kp N0 &kp TAB &kp LS(U) &kp O &kp B &kp A &kp P &kp P &kp AT &kp N2 &kp N0 &kp N2 &kp N5 &kp N0 &kp N2>;
+            label = "MACRO_2_3";
+        };
+
+        macro_3_1: macro_3_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp E &kp N &kp N8 &kp B &kp I &kp TAB &kp LS(S) &kp E &kp P &kp T &kp E &kp M &kp B &kp E &kp R &kp POUND &kp N2 &kp N0 &kp N2 &kp N5>;
+            label = "MACRO_3_1";
+        };
+
+        macro_4_1: macro_5_1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp E &kp N &kp W &kp B &kp N4 &kp TAB &kp LS(F) &kp E &kp B &kp R &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
+            label = "MACRO_5_1";
         };
     };
 
@@ -237,7 +209,7 @@
             bindings = <
 &kp ESC        &trans    &trans     &trans        &trans     &trans    &trans   &kp N7  &kp N8  &kp N9  &kp EXCLAMATION  &grave_tilde_td
 &kp BACKSPACE  &kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH  &trans    &trans   &kp N4  &kp N5  &kp N6  &kp QUESTION     &trans
-&trans         &trans    &trans     &trans        &trans     &trans    &kp DOT  &kp N1  &kp N2  &kp N3  &kp AT           &trans
+&trans         &trans    &trans     &trans        &trans     &trans    &kp DOT  &kp N1  &kp N2  &kp N3  &kp AT           &sl 5
                                     &kp DOT       &mo 3      &kp N0    &trans   &trans  &kp N0
             >;
 
@@ -263,6 +235,17 @@
             >;
 
             label = "Functions";
+        };
+
+        auth_layer {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &macro_1_2  &macro_2_2  &trans      &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &macro_1_1  &macro_2_1  &macro_3_1  &macro_4_1  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &macro_1_3  &macro_2_3  &trans      &trans      &trans
+                        &trans  &trans  &trans    &trans  &trans      &trans
+            >;
+
+            label = "Auth";
         };
     };
 };
