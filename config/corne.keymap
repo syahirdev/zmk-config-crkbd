@@ -116,42 +116,42 @@
         macro_1_1: macro_1_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp V &kp E &kp N &kp Q &kp N8 &kp H>;
+            bindings = <&kp V &kp E &kp N &kp Q &kp N8 &kp H &kp TAB &kp LS(J) &kp A &kp N &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "MACRO_1_1";
         };
 
         macro_1_2: macro_1_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(J) &kp A &kp N &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
+            bindings = <&kp V &kp E &kp N &kp Q &kp N8 &kp H>;
             label = "MACRO_1_2";
         };
 
         macro_1_3: macro_1_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp V &kp E &kp N &kp Q &kp N8 &kp H &kp TAB &kp LS(J) &kp A &kp N &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
+            bindings = <&kp LS(J) &kp A &kp N &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
             label = "MACRO_1_3";
         };
 
         macro_2_1: macro_2_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp T &kp T &kp S &kp T &kp D &kp O &kp M &kp BSLH &kp U &kp N &kp C &kp X &kp R &kp M &kp N7 &kp N0>;
+            bindings = <&kp N &kp T &kp T &kp S &kp T &kp D &kp O &kp M &kp BSLH &kp U &kp N &kp C &kp X &kp R &kp M &kp N7 &kp N0 &kp TAB &kp LS(U) &kp O &kp B &kp A &kp P &kp P &kp AT &kp N2 &kp N0 &kp N2 &kp N5 &kp N0 &kp N2>;
             label = "MACRO_2_1";
         };
 
         macro_2_2: macro_2_2 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(U) &kp O &kp B &kp A &kp P &kp P &kp AT &kp N2 &kp N0 &kp N2 &kp N5 &kp N0 &kp N2>;
+            bindings = <&kp N &kp T &kp T &kp S &kp T &kp D &kp O &kp M &kp BSLH &kp U &kp N &kp C &kp X &kp R &kp M &kp N7 &kp N0>;
             label = "MACRO_2_2";
         };
 
         macro_2_3: macro_2_3 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp N &kp T &kp T &kp S &kp T &kp D &kp O &kp M &kp BSLH &kp U &kp N &kp C &kp X &kp R &kp M &kp N7 &kp N0 &kp TAB &kp LS(U) &kp O &kp B &kp A &kp P &kp P &kp AT &kp N2 &kp N0 &kp N2 &kp N5 &kp N0 &kp N2>;
+            bindings = <&kp LS(U) &kp O &kp B &kp A &kp P &kp P &kp AT &kp N2 &kp N0 &kp N2 &kp N5 &kp N0 &kp N2>;
             label = "MACRO_2_3";
         };
 
@@ -162,11 +162,39 @@
             label = "MACRO_3_1";
         };
 
-        macro_4_1: macro_5_1 {
+        macro_3_2: macro_3_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp E &kp N &kp N8 &kp B &kp I>;
+            label = "MACRO_3_2";
+        };
+
+        macro_3_3: macro_3_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(S) &kp E &kp P &kp T &kp E &kp M &kp B &kp E &kp R &kp POUND &kp N2 &kp N0 &kp N2 &kp N5>;
+            label = "MACRO_3_3";
+        };
+
+        macro_4_1: macro_4_1 {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp V &kp E &kp N &kp W &kp B &kp N4 &kp TAB &kp LS(F) &kp E &kp B &kp R &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
-            label = "MACRO_5_1";
+            label = "MACRO_4_1";
+        };
+
+        macro_4_2: macro_4_2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp V &kp E &kp N &kp W &kp B &kp N4>;
+            label = "MACRO_4_2";
+        };
+
+        macro_4_3: macro_4_3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(F) &kp E &kp B &kp R &kp U &kp A &kp R &kp Y &kp AT &kp N2 &kp N0 &kp N2 &kp N5>;
+            label = "MACRO_4_3";
         };
     };
 
@@ -239,9 +267,9 @@
 
         auth_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &macro_1_2  &macro_2_2  &trans      &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &macro_1_2  &macro_2_2  &macro_3_2  &macro_4_2  &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &macro_1_1  &macro_2_1  &macro_3_1  &macro_4_1  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &macro_1_3  &macro_2_3  &trans      &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &macro_1_3  &macro_2_3  &macro_3_3  &macro_4_3  &trans
                         &trans  &trans  &trans    &trans  &trans      &trans
             >;
 
